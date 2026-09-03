@@ -1067,8 +1067,9 @@ h3 {
 
 .archives {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: clamp(16px, 2vw, 26px);
+  justify-items: center;
 }
 
 .archive figure,
@@ -1076,10 +1077,17 @@ h3 {
   margin: 0;
 }
 
+.archive {
+  width: 100%;
+  max-width: 360px;
+}
+
 .archive img {
   width: 100%;
-  aspect-ratio: 2 / 3;
+  height: auto;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: 50% 64%;
   display: block;
 }
 
