@@ -12,9 +12,9 @@ export const lastDrop = {
 };
 
 export const archives = [
-  { src: '/images/shop-hoodie-navy.jpg', alt: 'Hoodie marine à écusson blanc sérigraphié', title: 'Hoodie écusson', desc: 'Molleton marine, écusson sérigraphié blanc' },
-  { src: '/images/shop-tee-dos.jpg', alt: 'T-shirt blanc, lettrage Ménilmontant Basketball au dos', title: 'T-shirt lettrage', desc: 'Coton blanc, typographie marine au dos' },
-  { src: '/images/shop-tee-coeur.jpg', alt: 'T-shirt blanc avec le cœur-ballon sur la poitrine', title: 'T-shirt cœur-ballon', desc: 'Coton blanc, cœur-ballon marine sur la poitrine' },
+  { src: '/images/shop-hoodie-navy.jpg', alt: 'T-shirt blanc, lettrage Ménilmontant Basketball au dos', title: 'T-shirt lettrage', desc: 'Coton blanc, typographie marine au dos' },
+  { src: '/images/shop-tee-dos.jpg', alt: 'T-shirt blanc avec le cœur-ballon sur la poitrine', title: 'T-shirt cœur-ballon', desc: 'Coton blanc, cœur-ballon marine sur la poitrine' },
+  { src: '/images/shop-tee-coeur.jpg', alt: 'Hoodie marine à écusson blanc sérigraphié', title: 'Hoodie écusson', desc: 'Molleton marine, écusson sérigraphié blanc' },
 ];
 
 export const shopInfo = [

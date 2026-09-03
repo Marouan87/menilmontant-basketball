@@ -1564,3 +1564,19 @@ h3 {
   color: var(--navy);
   padding: 10px 14px;
 }
+
+/* ---------- ajustements mobiles ---------- */
+
+@media (max-width: 900px) {
+  .fact + .fact {
+    padding-left: 0;
+  }
+  .fact:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .day {
+    border-left: none;
+    border-top: 1px solid #e7ecf0;
+  }
+}
