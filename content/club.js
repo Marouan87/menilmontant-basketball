@@ -1,3 +1,9 @@
+export const philosophy = [
+  "Ménilmontant Basketball est un club de quartier du 20e arrondissement, entièrement tourné vers le basket. On y accueille les enfants dès cinq ans au mini-basket, les jeunes en championnat, les séniors, les vétérans et ceux qui viennent jouer sans compétition. Tous les niveaux, tous les parcours, dans les gymnases du quartier.",
+  "Le club est une association gérée par des bénévoles. Ce qu'on cherche à former ici, ce sont des joueurs, mais aussi des gamins qui savent se tenir dans un vestiaire, respecter un arbitre et compter sur leurs coéquipiers. Cette vocation éducative vient des patronages qui ont fondé le club à la fin du 19e siècle, et elle n'a pas bougé.",
+  "La force du club, c'est la diversité de Ménilmontant : des familles de tout le quartier, des joueurs venus de partout, des générations qui se croisent au bord du terrain. Plus qu'un club, une bande.",
+]
+
 export const history = [
   "Le club descend de deux patronages du 20e arrondissement : les Ménil'montagnards, fondés en 1898 auprès de la paroisse Notre-Dame de la Croix, rue Julien-Lacroix, et la Jeanne d'Arc de Ménilmontant, fondée en 1899 auprès de Notre-Dame-de-Lourdes, rue Pelleport. Dans un faubourg populaire et ouvrier, leur vocation était d'abord éducative : offrir aux jeunes du quartier un lieu de rassemblement les jeudis et les dimanches, autour de la culture et du sport.",
   "C'est dans le basket que la Jeanne d'Arc écrit ses plus belles pages. En 1919, Charles Laffargue, alors âgé de 19 ans, y fonde la première équipe. Le club devient une place forte du basket des patronages, puis dispute le championnat de France de première division aux côtés du Racing Club de France et du Paris UC. Il atteint les finales nationales de la Fédération sportive de France en 1946 et 1947, et devient Champion de Paris en 1953.",
@@ -12,6 +18,7 @@ export const milestones = [
   { year: '1946', text: 'Finales nationales de la Fédération sportive de France en 1946 et 1947. Le club joue alors en première division.' },
   { year: '1953', text: 'Champion de Paris, sous la conduite du joueur et entraîneur Jean Martin.' },
   { year: '1962', text: 'Fusion des deux patronages : naissance du Ménilmontant Paris Sports.' },
+  { year: '2015', text: 'Les séniors sont sacrés Champions de Paris.' },
   { year: '2017', text: "Marcel Béziers est intronisé à l'Académie régionale du basket Île-de-France." },
 ];
 

@@ -77,18 +77,18 @@ export default function HomePage() {
           <div>
             <div className="eyebrow-rule">
               <span />
-              <span>La boutique</span>
+              <span>Le textile</span>
             </div>
             <h2 className="h2" style={{ fontSize: 'clamp(28px, 4vw, 46px)', marginBottom: 18 }}>
               Portez les couleurs du club
             </h2>
             <p className="prose" style={{ maxWidth: '44ch', marginBottom: 28 }}>
-              T-shirts, hoodies et maillots floqués Ménilmontant, sortis en drops
-              limités au fil de la saison. Commande par message sur Instagram ou
+              T-shirts, hoodies et maillots floqués Ménilmontant, sortis en séries
+              limitées au fil de la saison. Commande par message sur Instagram ou
               directement au gymnase.
             </p>
-            <Link href="/boutique" className="btn">
-              Voir la boutique
+            <Link href="/textile" className="btn">
+              Voir les pièces
             </Link>
           </div>
         </div>

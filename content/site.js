@@ -18,14 +18,14 @@ export const nav = [
   { href: '/', label: 'Accueil' },
   { href: '/le-club', label: 'Le club' },
   { href: '/equipes', label: 'Équipes' },
-  { href: '/boutique', label: 'Boutique' },
+  { href: '/textile', label: 'Textile' },
   { href: '/rejoindre', label: 'Rejoindre le club' },
   { href: '/contact', label: 'Contact' },
 ];
 
 export const homeFacts = [
   { label: 'Le gymnase', value: 'Gymnase Pyrénées, Paris 20e' },
-  { label: 'Nos catégories', value: 'U7 à U18 · Loisirs séniors' },
+  { label: 'Nos catégories', value: 'U7 à vétérans · Loisirs séniors' },
   { label: 'Saison', value: '2026 — 2027, inscriptions ouvertes' },
 ];
 

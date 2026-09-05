@@ -1673,3 +1673,72 @@ h3 {
   padding: 6px 12px;
   margin-bottom: 14px;
 }
+
+/* ---------- sous-menu d'ancres ---------- */
+
+.anchors {
+  background: var(--navy-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 var(--pad);
+  position: sticky;
+  top: 78px;
+  z-index: 40;
+}
+
+.anchors-row {
+  display: flex;
+  gap: clamp(14px, 2.4vw, 36px);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.anchors-row::-webkit-scrollbar {
+  display: none;
+}
+
+.anchors-row a {
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.66);
+  padding: 16px 0;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.anchors-row a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.section[id],
+section[id] {
+  scroll-margin-top: 130px;
+}
+
+.columns-2 {
+  columns: 2;
+  column-gap: clamp(28px, 4vw, 56px);
+}
+
+.columns-2 p {
+  break-inside: avoid;
+}
+
+@media (max-width: 800px) {
+  .columns-2 {
+    columns: 1;
+  }
+  .anchors {
+    top: 78px;
+  }
+}
+
+/* ---------- page contact en colonne ---------- */
+
+.contact-col {
+  max-width: 720px;
+  margin: 0 auto;
+}

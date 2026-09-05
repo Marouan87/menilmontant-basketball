@@ -1,12 +1,20 @@
 import Image from 'next/image';
 import PageHero from '@/components/PageHero';
-import { figures, history, milestones, staff, values } from '@/content/club';
+import { figures, history, milestones, philosophy, staff, values } from '@/content/club';
 
 export const metadata = {
   title: 'Le club',
   description:
-    "L'histoire du Ménilmontant Paris Sports, ses grandes dates, ses figures, ses valeurs et son équipe dirigeante.",
+    "Le Ménilmontant Paris Sports : ses valeurs, son histoire depuis 1899, ses grandes dates, ses figures et son équipe dirigeante.",
 };
+
+const sections = [
+  { href: '#valeurs', label: 'Nos valeurs' },
+  { href: '#histoire', label: 'Notre histoire' },
+  { href: '#dates', label: 'Les grandes dates' },
+  { href: '#figures', label: 'Les figures' },
+  { href: '#equipe', label: "L'équipe dirigeante" },
+];
 
 export default function ClubPage() {
   return (
@@ -24,7 +32,43 @@ export default function ClubPage() {
         position="50% 28%"
       />
 
-      <section className="section">
+      <nav className="anchors" aria-label="Sections de la page">
+        <div className="wrap anchors-row">
+          {sections.map((s) => (
+            <a key={s.href} href={s.href}>
+              {s.label}
+            </a>
+          ))}
+        </div>
+      </nav>
+
+      <section id="valeurs" className="section">
+        <div className="wrap">
+          <h2 className="h2" style={{ marginBottom: 20 }}>
+            Ce qu&apos;on est
+          </h2>
+          <div className="prose columns-2" style={{ marginBottom: 'clamp(32px, 4vw, 52px)' }}>
+            {philosophy.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+
+          <h3 className="h2" style={{ fontSize: 'clamp(20px, 2.4vw, 26px)', marginBottom: 24 }}>
+            Nos valeurs
+          </h3>
+          <div className="values">
+            {values.map((v) => (
+              <div className="value" key={v.num}>
+                <div className="value-num">{v.num}</div>
+                <h3>{v.title}</h3>
+                <p>{v.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="histoire" className="section section-soft">
         <div className="wrap split">
           <div>
             <h2 className="h2" style={{ marginBottom: 18 }}>
@@ -47,7 +91,7 @@ export default function ClubPage() {
         </div>
       </section>
 
-      <section className="section section-navy">
+      <section id="dates" className="section section-navy">
         <div className="wrap">
           <h2 className="h2" style={{ marginBottom: 'clamp(28px, 3vw, 44px)' }}>
             Les grandes dates
@@ -63,7 +107,7 @@ export default function ClubPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section id="figures" className="section">
         <div className="wrap">
           <h2 className="h2" style={{ marginBottom: 8 }}>
             Les figures du club
@@ -84,24 +128,7 @@ export default function ClubPage() {
         </div>
       </section>
 
-      <section className="section section-soft">
-        <div className="wrap">
-          <h2 className="h2" style={{ marginBottom: 32 }}>
-            Nos valeurs
-          </h2>
-          <div className="values">
-            {values.map((v) => (
-              <div className="value" key={v.num}>
-                <div className="value-num">{v.num}</div>
-                <h3>{v.title}</h3>
-                <p>{v.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
+      <section id="equipe" className="section section-soft">
         <div className="wrap">
           <h2 className="h2" style={{ marginBottom: 8 }}>
             L&apos;équipe dirigeante
@@ -115,7 +142,7 @@ export default function ClubPage() {
                 <div className="staff-photo">
                   <Image
                     src={s.photo}
-                    alt={`Photo de ${s.person}`}
+                    alt={`Portrait de ${s.person}`}
                     fill
                     sizes="(max-width: 700px) 100vw, 280px"
                   />

@@ -135,8 +135,8 @@ export default function ContactForm({ defaultSubject = SUBJECTS[0] }) {
       </button>
 
       <p className="form-hint">
-        Vous pouvez aussi écrire directement à{' '}
-        <a href={`mailto:${club.email}`}>{club.email}</a>.
+        Vous pouvez aussi <a href={`mailto:${club.email}`}>nous écrire directement</a>{' '}
+        depuis votre messagerie.
       </p>
     </form>
   );

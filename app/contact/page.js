@@ -6,7 +6,7 @@ import { club } from '@/content/site';
 export const metadata = {
   title: 'Contact',
   description:
-    'Écrire au Ménilmontant Basketball, venir au gymnase Pyrénées (296 rue des Pyrénées, Paris 20e) ou suivre le club sur Instagram.',
+    'Nous rencontrer au gymnase Pyrénées (296 rue des Pyrénées, Paris 20e), nous écrire par le formulaire, ou suivre le club sur Instagram.',
 };
 
 export default async function ContactPage({ searchParams }) {
@@ -30,49 +30,44 @@ export default async function ContactPage({ searchParams }) {
       />
 
       <section className="section">
-        <div className="wrap contact-grid">
-          <div>
-            <h2 className="h2" style={{ fontSize: 'clamp(20px, 2.6vw, 26px)', marginBottom: 20 }}>
-              Le gymnase
-            </h2>
-            <div className="contact-block">
-              <div className="contact-address">
-                {club.gym}
-                <br />
-                {club.address}
-                <br />
-                {club.zipCity}
-              </div>
-              <div className="contact-metro">{club.metro}</div>
+        <div className="contact-col">
+          <h2 className="h2" style={{ fontSize: 'clamp(20px, 2.6vw, 28px)', marginBottom: 20 }}>
+            Nous rencontrer
+          </h2>
+          <div className="contact-block">
+            <div className="contact-address">
+              {club.gym}
+              <br />
+              {club.address}
+              <br />
+              {club.zipCity}
             </div>
-
-            <h2 className="h2" style={{ fontSize: 'clamp(20px, 2.6vw, 26px)', marginBottom: 16 }}>
-              Nous écrire
-            </h2>
-            <div className="contact-mail">
-              <a href={`mailto:${club.email}`}>{club.email}</a>
-            </div>
-
-            <h2 className="h2" style={{ fontSize: 'clamp(20px, 2.6vw, 26px)', marginBottom: 16 }}>
-              Réseaux
-            </h2>
-            <div className="social-row">
-              <a href={club.instagram} target="_blank" rel="noopener" className="pill">
-                Instagram ↗
-              </a>
-              <a href={club.ffbb} target="_blank" rel="noopener" className="pill">
-                Fiche FFBB ↗
-              </a>
-            </div>
+            <div className="contact-metro">{club.metro}</div>
           </div>
+          <p className="lead" style={{ fontSize: 16, marginBottom: 'clamp(40px, 5vw, 64px)' }}>
+            Passez nous voir un soir d&apos;entraînement, le planning de la saison
+            est sur la page Équipes.
+          </p>
 
-          <div className="form-card">
-            <h2 className="h2" style={{ fontSize: 'clamp(20px, 2.6vw, 26px)', marginBottom: 24 }}>
-              Formulaire de contact
-            </h2>
+          <h2 className="h2" style={{ fontSize: 'clamp(20px, 2.6vw, 28px)', marginBottom: 20 }}>
+            Nous écrire
+          </h2>
+          <div className="form-card" style={{ marginBottom: 'clamp(40px, 5vw, 64px)' }}>
             <Suspense fallback={null}>
               <ContactForm defaultSubject={defaultSubject} />
             </Suspense>
+          </div>
+
+          <h2 className="h2" style={{ fontSize: 'clamp(20px, 2.6vw, 28px)', marginBottom: 20 }}>
+            Réseaux
+          </h2>
+          <div className="social-row">
+            <a href={club.instagram} target="_blank" rel="noopener" className="pill">
+              Instagram ↗
+            </a>
+            <a href={club.ffbb} target="_blank" rel="noopener" className="pill">
+              Fiche FFBB ↗
+            </a>
           </div>
         </div>
       </section>

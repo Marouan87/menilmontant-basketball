@@ -24,7 +24,7 @@ export default function SiteFooter() {
               <br />
               Club affilié FFBB
               <br />
-              <a href={`mailto:${club.email}`}>{club.email}</a>
+              <a href={`mailto:${club.email}`}>Nous écrire</a>
             </div>
           </div>
 
