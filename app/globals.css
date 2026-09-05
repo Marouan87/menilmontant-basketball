@@ -1742,3 +1742,11 @@ section[id] {
   max-width: 720px;
   margin: 0 auto;
 }
+
+/* ---------- actions du planning ---------- */
+
+.planning-actions .btn,
+.planning-actions .btn-outline {
+  font-size: 12.5px;
+  padding: 14px 22px;
+}

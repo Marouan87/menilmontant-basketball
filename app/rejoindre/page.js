@@ -67,6 +67,10 @@ export default function JoinPage() {
                 <span className="doc-label">Planning des entraînements</span>
                 <span className="doc-meta">Voir en ligne →</span>
               </Link>
+              <a href="/documents/planning-entrainements-2026-2027.pdf" download>
+                <span className="doc-label">Planning des entraînements</span>
+                <span className="doc-meta">PDF ↓</span>
+              </a>
             </div>
           </div>
           <div>

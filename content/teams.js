@@ -34,11 +34,11 @@ export const planning = [
     venue: 'Gymnase Pyrénées',
     address: '296 rue des Pyrénées, 75020 Paris',
     days: [
-      { day: 'Lundi', slots: [['U18 PERF', '19h - 20h30'], ['Seniors 1', '20h30 - 22h'], ['Seniors 2', '22h - 23h30']] },
+      { day: 'Lundi', slots: [['U18 PERF', '19h - 20h30'], ['Séniors 1', '20h30 - 22h'], ['Séniors 2', '22h - 23h30']] },
       { day: 'Mardi', slots: [['U13 PERF', '17h30 - 19h'], ['U15 PERF', '19h - 20h30'], ['U21', '20h30 - 22h'], ['Loisirs', '22h - 23h30']] },
-      { day: 'Mercredi', slots: [['U15', '17h30 - 19h'], ['U21', '19h - 20h30'], ['Vétérans', '20h30 - 22h'], ['Seniors 2', '22h - 23h30']] },
-      { day: 'Jeudi', slots: [['Loisirs', '22h30 - 00h']] },
-      { day: 'Vendredi', slots: [['U18', '18h - 19h15'], ['U18-2', '19h15 - 20h30'], ['U21', '20h30 - 22h'], ['Seniors 1', '22h - 23h30']] },
+      { day: 'Mercredi', slots: [['U15', '17h30 - 19h'], ['U21', '19h - 20h30'], ['Vétérans', '20h30 - 22h'], ['Séniors 2', '22h - 23h30']] },
+      { day: 'Jeudi', slots: [['Loisirs', '22h30 - 00h00']] },
+      { day: 'Vendredi', slots: [['U18', '18h - 19h15'], ['U18-2', '19h15 - 20h30'], ['U21', '20h30 - 22h'], ['Séniors 1', '22h - 23h30']] },
     ],
   },
   {
@@ -46,8 +46,8 @@ export const planning = [
     address: '7 rue Bretonneau, 75020 Paris',
     days: [
       { day: 'Mardi', slots: [['U11-1', '18h - 19h']] },
-      { day: 'Mercredi', slots: [['U11-2', '13h30 - 14h45'], ['U11-1', '14h45 - 16h15'], ['U13-1', '16h15 - 17h30']] },
-      { day: 'Samedi', slots: [['U7 et U9', '9h - 10h30'], ['U11', '10h45 - 12h15']] },
+      { day: 'Mercredi', slots: [['U11 Loisirs', '13h30 - 14h45'], ['U11-1', '14h45 - 16h15'], ['U13-1', '16h15 - 17h30']] },
+      { day: 'Samedi', slots: [['U7 et U9', '9h - 10h30'], ['U11 Loisirs', '10h45 - 12h15']] },
     ],
   },
   {

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
+import PlanningActions from '@/components/PlanningActions';
 import { ages, planning, teamGroups } from '@/content/teams';
 
 export const metadata = {
@@ -64,10 +65,11 @@ export default function TeamsPage() {
             <h2 className="h2" style={{ marginBottom: 10 }}>
               Planning des entraînements
             </h2>
-            <p className="lead" style={{ fontSize: 16.5, maxWidth: '60ch' }}>
+            <p className="lead" style={{ fontSize: 16.5, maxWidth: '60ch', marginBottom: 24 }}>
               Tous les créneaux de la saison, par gymnase. Les groupes PERF
               s&apos;ajoutent au créneau de leur catégorie.
             </p>
+            <PlanningActions />
           </div>
 
           <div className="planning">

@@ -29,6 +29,8 @@ export const homeFacts = [
   { label: 'Saison', value: '2026 — 2027, inscriptions ouvertes' },
 ];
 
+// Grille Instagram de l'accueil. Ajouter ou retirer une entrée suffit,
+// la grille s'adapte au nombre de visuels.
 export const instagramPosts = [1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({
   src: `/images/ig-${n}.jpg`,
   alt: 'Publication Instagram du club',

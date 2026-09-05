@@ -19,12 +19,12 @@ export const milestones = [
   { year: '1953', text: 'Champion de Paris, sous la conduite du joueur et entraîneur Jean Martin.' },
   { year: '1962', text: 'Fusion des deux patronages : naissance du Ménilmontant Paris Sports.' },
   { year: '2015', text: 'Les séniors sont sacrés Champions de Paris.' },
-  { year: '2017', text: "Marcel Béziers est intronisé à l'Académie régionale du basket Île-de-France." },
+  { year: '2017', text: "Charles Laffargue et Marcel Béziers sont intronisés à l'Académie régionale du basket Île-de-France." },
 ];
 
 export const figures = [
-  { name: 'Charles Laffargue', role: 'Fondateur de la section basket', text: "Membre du patronage, il crée l'équipe en 1919 et devient l'un des pionniers du basket français : premiers championnats parisiens, premières rencontres internationales dès la fin des années 1920." },
-  { name: 'Marcel Béziers', role: '1920-2016', text: "Arrivé au club à dix ans en 1930, il en gravit tous les échelons : joueur emblématique, capitaine, puis entraîneur. Une fidélité de toute une vie au club et à son esprit éducatif." },
+  { name: 'Charles Laffargue', role: 'Fondateur de la section basket', text: "Membre du patronage, il crée l'équipe en 1919 et devient l'un des pionniers du basket français : premiers championnats parisiens, premières rencontres internationales dès la fin des années 1920. Il est intronisé à l'Académie régionale du basket Île-de-France en 2017." },
+  { name: 'Marcel Béziers', role: '1920-2016', text: "Arrivé au club à dix ans en 1930, il en gravit tous les échelons : joueur emblématique, capitaine, puis entraîneur. International français, il reste fidèle toute sa vie au club et à son esprit éducatif. Il est intronisé à l'Académie régionale du basket Île-de-France en 2017." },
   { name: 'Jean Martin', role: 'Joueur international et entraîneur', text: "Sélectionné en équipe de France pour les Championnats d'Europe de 1946 et 1947, il reste fidèle au club toute sa vie et le mène au titre de Champion de Paris en 1953." },
   { name: 'Jacques Delors', role: '1925-2023', text: "Enfant du quartier, il fréquente le patronage dans les années 1930 : il y joue au basket et y fonde le Ciné-club de la Jeanne d'Arc, avant de devenir ministre des Finances puis président de la Commission européenne." },
   { name: 'La famille Watrin', role: 'Pierre-Louis, puis Sébastien', text: "De génération en génération, elle porte la continuité de cet héritage : formation des jeunes, transmission des valeurs éducatives et ancrage du club dans le 20e arrondissement." },
