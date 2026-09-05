@@ -48,9 +48,12 @@ export default function TextilePage() {
                     <p key={i}>{p}</p>
                   ))}
                 </div>
-                <div className="drop-sizes">
-                  <span>Tailles</span>
-                  <span style={{ fontSize: 15 }}>{drop.sizes}</span>
+                <div className="drop-meta">
+                  <div className="drop-sizes">
+                    <span>Tailles</span>
+                    <span style={{ fontSize: 15 }}>{drop.sizes}</span>
+                  </div>
+                  {drop.price ? <div className="drop-price">{drop.price}</div> : null}
                 </div>
               </div>
             </div>

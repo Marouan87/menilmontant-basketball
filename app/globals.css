@@ -1750,3 +1750,23 @@ section[id] {
   font-size: 12.5px;
   padding: 14px 22px;
 }
+
+/* ---------- prix des pièces ---------- */
+
+.drop-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+
+.drop-price {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  margin-left: auto;
+}
