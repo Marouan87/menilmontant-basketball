@@ -17,9 +17,9 @@ export default function DropGallery({ images }) {
 
   return (
     <>
-      <div className="duo">
+      <div className="drop-shots">
         {images.map((img) => (
-          <figure key={img.src} style={{ margin: 0 }}>
+          <figure key={img.src} className="drop-shot">
             <button
               type="button"
               className="zoom-btn"
@@ -29,8 +29,8 @@ export default function DropGallery({ images }) {
               <Image
                 src={img.src}
                 alt={img.alt}
-                width={1000}
-                height={1000}
+                width={1400}
+                height={1400}
                 sizes="(max-width: 800px) 45vw, 280px"
                 style={{ width: '100%', height: 'auto' }}
               />

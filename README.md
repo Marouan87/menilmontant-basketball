@@ -61,10 +61,30 @@ pages.
   en championnat renvoie vers sa fiche FFBB, tenue à jour par la fédération.
 - Pas de section actualités à rédiger chaque semaine : la page d'accueil affiche
   une grille de publications Instagram qui renvoie vers `@menilmontantbb`.
-- Le formulaire de contact ouvre la messagerie du visiteur avec un message
-  prérempli, donc aucun serveur ni service tiers à maintenir. Pour un envoi
-  direct, brancher plus tard une route API et un service d'envoi d'email.
+- Le formulaire de contact envoie un vrai email à l'adresse du club via Resend,
+  depuis la route `app/api/contact/route.js`. Voir la section ci-dessous.
 - Les polices sont auto-hébergées : aucune requête vers Google Fonts.
+
+## Formulaire de contact
+
+Les messages partent vers l'adresse du club par Resend. Trois variables
+d'environnement, à définir en local dans un fichier `.env.local` (voir
+`.env.local.example`) et dans les variables d'environnement du projet Vercel :
+
+- `RESEND_API_KEY` : clé créée sur https://resend.com/api-keys
+- `CONTACT_TO` : destinataire des messages, par défaut l'adresse du club
+- `CONTACT_FROM` : expéditeur, `Site du club <onboarding@resend.dev>` tant que le
+  domaine du club n'est pas vérifié dans Resend
+
+Tant que l'expéditeur de test `onboarding@resend.dev` est utilisé, Resend
+n'accepte l'envoi que vers l'adresse email du compte Resend. Une fois le domaine
+`menilmontantbb.com` vérifié dans Resend, passer `CONTACT_FROM` sur une adresse
+de ce domaine permet d'écrire à n'importe quel destinataire.
+
+La route valide les champs côté serveur, met l'adresse du visiteur en
+`Reply-To`, et comporte un champ piège invisible contre les robots. Sans clé
+configurée, le formulaire affiche une erreur claire au visiteur et propose
+l'adresse email du club.
 
 ## Déploiement
 

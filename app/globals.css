@@ -1588,3 +1588,88 @@ h3 {
     border-top: 1px solid #e7ecf0;
   }
 }
+
+/* ---------- retours du formulaire ---------- */
+
+.field-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-error {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #9b2c2c;
+  background: #fdecec;
+  border-left: 2px solid #9b2c2c;
+  padding: 12px 14px;
+  margin: 0;
+}
+
+.form-card .btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.form-done-title {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+.form-done p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--body);
+  margin: 0 0 22px;
+}
+
+/* ---------- pièces de la boutique ---------- */
+
+.drop-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+  gap: 10px;
+  align-content: start;
+}
+
+.drop-shot {
+  margin: 0;
+}
+
+.drop-shot img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: var(--bg-soft);
+}
+
+.drop {
+  padding-top: clamp(32px, 4vw, 56px);
+}
+
+.drop + .drop {
+  border-top: 1px solid var(--line);
+  margin-top: clamp(32px, 4vw, 56px);
+}
+
+.drop-badge {
+  display: inline-block;
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 10.5px;
+  font-weight: 600;
+  background: var(--navy);
+  color: #fff;
+  padding: 6px 12px;
+  margin-bottom: 14px;
+}

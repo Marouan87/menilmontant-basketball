@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import DropGallery from '@/components/DropGallery';
-import { archives, lastDrop, shopInfo } from '@/content/shop';
+import { archives, drops, shopInfo } from '@/content/shop';
 import { club } from '@/content/site';
 
 export const metadata = {
@@ -42,25 +42,29 @@ export default function ShopPage() {
         <div className="wrap">
           <div className="eyebrow-rule">
             <span />
-            <span>Dernier drop</span>
+            <span>Les pièces du club</span>
           </div>
-        </div>
-        <div className="wrap split split-center">
-          <DropGallery images={lastDrop.images} />
-          <div>
-            <h2 className="h2" style={{ fontSize: 'clamp(26px, 3.4vw, 40px)', marginBottom: 22 }}>
-              {lastDrop.name}
-            </h2>
-            <div className="prose" style={{ maxWidth: '46ch', marginBottom: 26 }}>
-              {lastDrop.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+
+          {drops.map((drop) => (
+            <div className="drop split split-center" key={drop.slug}>
+              <DropGallery images={drop.images} />
+              <div>
+                {drop.badge ? <div className="drop-badge">{drop.badge}</div> : null}
+                <h2 className="h2" style={{ fontSize: 'clamp(26px, 3.4vw, 40px)', marginBottom: 22 }}>
+                  {drop.name}
+                </h2>
+                <div className="prose" style={{ maxWidth: '46ch', marginBottom: 26 }}>
+                  {drop.paragraphs.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+                <div className="drop-sizes">
+                  <span>Tailles</span>
+                  <span style={{ fontSize: 15 }}>{drop.sizes}</span>
+                </div>
+              </div>
             </div>
-            <div className="drop-sizes">
-              <span>Tailles</span>
-              <span style={{ fontSize: 15 }}>{lastDrop.sizes}</span>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
