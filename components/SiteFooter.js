@@ -44,8 +44,8 @@ export default function SiteFooter() {
               <a href={club.ffbb} target="_blank" rel="noopener">
                 Calendrier et résultats FFBB ↗
               </a>
-              <a href={club.adhesionPdf} target="_blank" rel="noopener">
-                Fiche d&apos;adhésion 2026-2027 ↗
+              <a href={club.adhesionPdf} download>
+                Fiche d&apos;adhésion 2026-2027 ↓
               </a>
               <Link href="/reglement">Règlement intérieur</Link>
               <Link href="/equipes#planning">Planning des entraînements</Link>

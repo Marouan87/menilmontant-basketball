@@ -25,8 +25,8 @@ export default function JoinPage() {
         image="/images/page-rejoindre.jpg"
       >
         <div style={{ marginTop: 30 }}>
-          <a href={club.adhesionPdf} target="_blank" rel="noopener" className="btn-light">
-            Demander ma licence ↗
+          <a href={club.adhesionPdf} download className="btn-light">
+            Télécharger la fiche d&apos;adhésion
           </a>
         </div>
       </PageHero>
@@ -55,7 +55,7 @@ export default function JoinPage() {
               Les documents
             </h2>
             <div className="doc-list">
-              <a href={club.adhesionPdf} target="_blank" rel="noopener">
+              <a href={club.adhesionPdf} download>
                 <span className="doc-label">Fiche d&apos;adhésion 2026-2027</span>
                 <span className="doc-meta">PDF ↓</span>
               </a>

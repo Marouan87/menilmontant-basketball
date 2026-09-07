@@ -2,7 +2,9 @@
 
 import { useState } from 'react';
 
-const PDF = '/documents/planning-entrainements-2026-2027.pdf';
+import { club } from '@/content/site';
+
+const PDF = club.planningPdf;
 
 export default function PlanningActions() {
   const [copied, setCopied] = useState(false);

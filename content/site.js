@@ -9,8 +9,9 @@ export const club = {
   instagram: 'https://www.instagram.com/menilmontantbb/',
   instagramHandle: '@menilmontantbb',
   ffbb: 'https://competitions.ffbb.com/ligues/idf/comites/0075/clubs/idf0075045',
-  adhesionPdf:
-    "https://menilmontantbb.com/assets/fichiers_mps/Fiche%20d'adhesion%20MPS%202026-2027.pdf",
+  // Documents servis par le site lui-même, pour ne dépendre d'aucun hébergeur externe
+  adhesionPdf: '/documents/fiche-adhesion-2026-2027.pdf',
+  planningPdf: '/documents/planning-entrainements-2026-2027.pdf',
   season: '2026 — 2027',
 };
 
