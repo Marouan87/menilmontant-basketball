@@ -39,6 +39,6 @@ export const values = [
 export const staff = [
   { photo: '/images/staff-sebastien.jpg', role: 'Président', person: 'Sébastien Watrin', mission: "Représente le club auprès de la FFBB et de la Ville de Paris." },
   { photo: '/images/staff-gm.jpg', role: 'General Manager', person: 'Gwenaël Sapin & Anis Martin', mission: 'Organisation du club, partenariats et vie quotidienne des équipes.' },
-  { photo: '/images/staff-kevin.jpg', role: 'Responsable sportif', person: 'Kevin Agpah', mission: 'Créneaux, coachs et engagement des équipes en championnat.' },
+  { photo: '/images/staff-kevin.jpg', role: 'Responsable sportif', person: 'Kévin Akhpa', mission: 'Créneaux, coachs et engagement des équipes en championnat.' },
   { photo: '/images/staff-loic.jpg', role: 'Trésorier', person: 'Loïc Estimbre', mission: 'Cotisations, budget de la saison et subventions.' },
 ];
