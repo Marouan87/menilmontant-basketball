@@ -9,7 +9,7 @@ export default function SiteFooter() {
         <div className="footer-grid">
           <div>
             <Image
-              src="/images/logo-navy.png"
+              src="/images/logo-white.png"
               alt=""
               width={62}
               height={62}
