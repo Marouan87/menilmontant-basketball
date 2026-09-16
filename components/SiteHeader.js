@@ -22,7 +22,7 @@ export default function SiteHeader() {
       <div className="header-inner">
         <Link href="/" className="brand" aria-label="Ménilmontant Basketball, accueil">
           <Image
-            src="/images/logo-white.png"
+            src="/images/logo-navy.png"
             alt=""
             width={46}
             height={46}
