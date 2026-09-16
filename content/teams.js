@@ -13,8 +13,40 @@ export const teamGroups = [
       { name: 'U11', level: 'Deux groupes, nés en 2016 et 2017', training: 'Mercredi, 14h45 — 16h15\nSamedi, 10h45 — 12h15\nGymnase Bretonneau' },
       { name: 'U13', level: 'Deux groupes, nés en 2014 et 2015', training: 'Mercredi, 16h15 — 17h30 · Bretonneau\nJeudi, 18h00 — 19h30 · Robert Doisneau' },
       { name: 'U15', level: 'Deux groupes, nés en 2012 et 2013', training: 'Mercredi, 17h30 — 19h00 · Pyrénées\nJeudi, 19h00 — 20h30 · Robert Doisneau' },
-      { name: 'U18', level: 'Régionale masculine U18 - Division 2', training: 'Vendredi, 18h00 — 19h15\nGymnase Pyrénées', href: `${FFBB_TEAM}/200000005337906` },
-      { name: 'U21', level: 'Régionale masculine U21 - Division 2', training: 'Mercredi, 19h00 — 20h30\nGymnase Pyrénées', href: `${FFBB_TEAM}/200000005337825` },
+      {
+        name: 'U18',
+        level: 'Nés de 2009 à 2011',
+        squads: [
+          {
+            title: 'Régionale',
+            level: 'Régionale masculine U18 - Division 2',
+            training: 'Vendredi, 18h00 — 19h15\nGymnase Pyrénées',
+            href: `${FFBB_TEAM}/200000005337906`,
+          },
+          {
+            title: 'Départementale',
+            level: 'Départementale masculine U18',
+            training: 'Vendredi, 19h15 — 20h30 · Pyrénées\nLundi, 18h00 — 19h30 · Paul Valéry',
+          },
+        ],
+      },
+      {
+        name: 'U21',
+        level: 'Nés de 2006 à 2008',
+        squads: [
+          {
+            title: 'Régionale',
+            level: 'Régionale masculine U21 - Division 2',
+            training: 'Mercredi, 19h00 — 20h30\nGymnase Pyrénées',
+            href: `${FFBB_TEAM}/200000005337825`,
+          },
+          {
+            title: 'Départementale',
+            level: 'Départementale masculine U21',
+            training: 'Mardi, 20h30 — 22h00\nVendredi, 20h30 — 22h00\nGymnase Pyrénées',
+          },
+        ],
+      },
     ],
   },
   {

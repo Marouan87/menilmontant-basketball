@@ -35,18 +35,46 @@ export default function TeamsPage() {
                       <h3>{t.name}</h3>
                       <div className="team-level">{t.level}</div>
                     </div>
-                    <div className="team-training">
-                      <div className="team-training-label">Entraînements</div>
-                      <div className="team-training-value">{t.training}</div>
-                    </div>
-                    {t.href ? (
-                      <a href={t.href} target="_blank" rel="noopener" className="team-link">
-                        Calendrier FFBB&nbsp;↗
-                      </a>
+
+                    {t.squads ? (
+                      <div className="squads">
+                        {t.squads.map((q) => (
+                          <div className="squad" key={q.title}>
+                            <div className="squad-title">{q.title}</div>
+                            <div className="team-level">{q.level}</div>
+                            <div className="team-training">
+                              <div className="team-training-label">Entraînements</div>
+                              <div className="team-training-value">{q.training}</div>
+                            </div>
+                            {q.href ? (
+                              <a
+                                href={q.href}
+                                target="_blank"
+                                rel="noopener"
+                                className="team-link"
+                              >
+                                Calendrier FFBB&nbsp;↗
+                              </a>
+                            ) : null}
+                          </div>
+                        ))}
+                      </div>
                     ) : (
-                      <Link href="/rejoindre" className="team-link">
-                        S&apos;inscrire&nbsp;→
-                      </Link>
+                      <>
+                        <div className="team-training">
+                          <div className="team-training-label">Entraînements</div>
+                          <div className="team-training-value">{t.training}</div>
+                        </div>
+                        {t.href ? (
+                          <a href={t.href} target="_blank" rel="noopener" className="team-link">
+                            Calendrier FFBB&nbsp;↗
+                          </a>
+                        ) : (
+                          <Link href="/rejoindre" className="team-link">
+                            S&apos;inscrire&nbsp;→
+                          </Link>
+                        )}
+                      </>
                     )}
                   </div>
                 ))}
