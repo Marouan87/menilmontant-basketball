@@ -1,30 +1,17 @@
 export const drops = [
   {
-    slug: 'hoodie-marine',
-    name: 'Hoodie Panneau marine',
+    slug: 'hoodie-panneau',
+    name: 'Hoodie Panneau',
     paragraphs: [
-      "Le même hoodie Panneau, en bleu marine et broderie blanche. Molleton épais, poche kangourou, coupe oversize, avec le panneau du playground et le nom du club sur la poitrine.",
+      "Sweat à capuche en molleton épais, poche kangourou, coupe oversize. Sur la poitrine, le panneau et l'arceau du playground dessinés à la ligne, avec le nom du club en capitales sous le logo.",
+      'Deux coloris : bleu marine à impression blanche, et écru à impression bleu marine.',
       'Molleton gratté, coupe unisexe, série limitée de la saison 2025-2026.',
     ],
     price: '40 €',
     sizes: 'S · M · L · XL · XXL',
     images: [
-      { src: '/images/hoodie-marine-face.jpg', alt: 'Hoodie marine, face avant avec le logo panneau brodé en blanc', caption: 'Face avant · cliquer pour agrandir' },
-      { src: '/images/hoodie-marine-porte.jpg', alt: 'Le hoodie marine porté', caption: 'Porté · cliquer pour agrandir' },
-    ],
-  },
-  {
-    slug: 'hoodie-ecru',
-    name: 'Hoodie Panneau écru',
-    paragraphs: [
-      "Sweat à capuche en molleton épais écru, poche kangourou, coupe oversize. Sur la poitrine, le panneau et l'arceau du playground dessinés à la ligne en bleu marine, avec le nom du club en capitales sous le logo.",
-      'Molleton gratté, coupe unisexe, série limitée de la saison 2025-2026.',
-    ],
-    price: '40 €',
-    sizes: 'S · M · L · XL · XXL',
-    images: [
-      { src: '/images/hoodie-ecru-face.jpg', alt: 'Hoodie écru, face avant avec le logo panneau bleu marine', caption: 'Face avant · cliquer pour agrandir' },
-      { src: '/images/hoodie-ecru-porte.jpg', alt: 'Le hoodie écru porté sur un playground', caption: 'Porté · cliquer pour agrandir' },
+      { src: '/images/hoodie-marine-face.jpg', alt: 'Hoodie Panneau bleu marine, impression blanche', caption: 'Coloris marine · cliquer pour agrandir' },
+      { src: '/images/hoodie-ecru-face.jpg', alt: 'Hoodie Panneau écru, impression bleu marine', caption: 'Coloris écru · cliquer pour agrandir' },
     ],
   },
   {
