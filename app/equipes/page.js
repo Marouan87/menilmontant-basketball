@@ -139,6 +139,12 @@ export default function TeamsPage() {
           </div>
 
           <p className="note">
+            MPS désigne les équipes engagées sous les couleurs du Ménilmontant
+            Paris Sports, PBA celles engagées avec le club partenaire. Les
+            groupes 1 et 2 correspondent aux deux équipes d&apos;une même
+            catégorie.
+          </p>
+          <p className="note" style={{ marginTop: 8 }}>
             Créneaux susceptibles d&apos;évoluer en cours de saison. Votre
             entraîneur vous informe de tout changement.
           </p>

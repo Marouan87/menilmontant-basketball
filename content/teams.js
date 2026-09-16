@@ -10,21 +10,66 @@ export const teamGroups = [
         level: 'Mini-basket, groupe commun (nés de 2018 à 2021)',
         training: 'Samedi, 9h00 — 10h30\nGymnase Bretonneau',
       },
-      { name: 'U11', level: 'Deux groupes, nés en 2016 et 2017', training: 'Mercredi, 14h45 — 16h15\nSamedi, 10h45 — 12h15\nGymnase Bretonneau' },
-      { name: 'U13', level: 'Deux groupes, nés en 2014 et 2015', training: 'Mercredi, 16h15 — 17h30 · Bretonneau\nJeudi, 18h00 — 19h30 · Robert Doisneau' },
-      { name: 'U15', level: 'Deux groupes, nés en 2012 et 2013', training: 'Mercredi, 17h30 — 19h00 · Pyrénées\nJeudi, 19h00 — 20h30 · Robert Doisneau' },
+      {
+        name: 'U11',
+        level: 'Nés en 2016 et 2017',
+        squads: [
+          {
+            title: 'U11-1',
+            level: 'Groupe compétition',
+            training: 'Mardi, 18h00 — 19h00\nMercredi, 14h45 — 16h15\nGymnase Bretonneau',
+          },
+          {
+            title: 'U11 Loisirs',
+            level: 'Groupe loisirs, sans compétition',
+            training: 'Mercredi, 13h30 — 14h45\nSamedi, 10h45 — 12h15\nGymnase Bretonneau',
+          },
+        ],
+      },
+      {
+        name: 'U13',
+        level: 'Nés en 2014 et 2015',
+        squads: [
+          {
+            title: 'U13-1',
+            level: 'Premier groupe',
+            training: 'Mardi, 17h30 — 19h00 · Pyrénées\nMercredi, 16h15 — 17h30 · Bretonneau',
+          },
+          {
+            title: 'U13-2',
+            level: 'Second groupe',
+            training: 'Jeudi, 18h00 — 19h30\nCollège Robert Doisneau',
+          },
+        ],
+      },
+      {
+        name: 'U15',
+        level: 'Nés en 2012 et 2013',
+        squads: [
+          {
+            title: 'U15-1',
+            level: 'Premier groupe',
+            training: 'Mardi, 19h00 — 20h30 · Pyrénées\nMercredi, 17h30 — 19h00 · Pyrénées',
+          },
+          {
+            title: 'U15-2',
+            level: 'Second groupe',
+            training: 'Jeudi, 19h00 — 20h30\nCollège Robert Doisneau',
+          },
+        ],
+      },
       {
         name: 'U18',
         level: 'Nés de 2009 à 2011',
         squads: [
           {
-            title: 'Régionale',
+            title: 'U18 MPS',
             level: 'Régionale masculine U18 - Division 2',
-            training: 'Vendredi, 18h00 — 19h15\nGymnase Pyrénées',
+            training: 'Lundi, 19h00 — 20h30\nVendredi, 18h00 — 19h15\nGymnase Pyrénées',
             href: `${FFBB_TEAM}/200000005337906`,
           },
           {
-            title: 'Départementale',
+            title: 'U18 PBA',
             level: 'Départementale masculine U18',
             training: 'Vendredi, 19h15 — 20h30 · Pyrénées\nLundi, 18h00 — 19h30 · Paul Valéry',
           },
@@ -35,13 +80,13 @@ export const teamGroups = [
         level: 'Nés de 2006 à 2008',
         squads: [
           {
-            title: 'Régionale',
+            title: 'U21 MPS',
             level: 'Régionale masculine U21 - Division 2',
             training: 'Mercredi, 19h00 — 20h30\nGymnase Pyrénées',
             href: `${FFBB_TEAM}/200000005337825`,
           },
           {
-            title: 'Départementale',
+            title: 'U21 PBA',
             level: 'Départementale masculine U21',
             training: 'Mardi, 20h30 — 22h00\nVendredi, 20h30 — 22h00\nGymnase Pyrénées',
           },
@@ -66,11 +111,11 @@ export const planning = [
     venue: 'Gymnase Pyrénées',
     address: '296 rue des Pyrénées, 75020 Paris',
     days: [
-      { day: 'Lundi', slots: [['U18 PERF', '19h - 20h30'], ['Séniors 1', '20h30 - 22h'], ['Séniors 2', '22h - 23h30']] },
-      { day: 'Mardi', slots: [['U13 PERF', '17h30 - 19h'], ['U15 PERF', '19h - 20h30'], ['U21', '20h30 - 22h'], ['Loisirs', '22h - 23h30']] },
-      { day: 'Mercredi', slots: [['U15', '17h30 - 19h'], ['U21', '19h - 20h30'], ['Vétérans', '20h30 - 22h'], ['Séniors 2', '22h - 23h30']] },
-      { day: 'Jeudi', slots: [['Loisirs', '22h30 - 00h00']] },
-      { day: 'Vendredi', slots: [['U18', '18h - 19h15'], ['U18-2', '19h15 - 20h30'], ['U21', '20h30 - 22h'], ['Séniors 1', '22h - 23h30']] },
+      { day: 'Lundi', slots: [['U18 MPS', '19h - 20h30'], ['Séniors 1', '20h30 - 22h'], ['Séniors 2', '22h - 23h30']] },
+      { day: 'Mardi', slots: [['U13-1', '17h30 - 19h'], ['U15-1', '19h - 20h30'], ['U21 PBA', '20h30 - 22h'], ['Loisirs séniors', '22h - 23h30']] },
+      { day: 'Mercredi', slots: [['U15-1', '17h30 - 19h'], ['U21 MPS', '19h - 20h30'], ['Vétérans', '20h30 - 22h'], ['Séniors 2', '22h - 23h30']] },
+      { day: 'Jeudi', slots: [['Loisirs séniors', '22h30 - 00h00']] },
+      { day: 'Vendredi', slots: [['U18 MPS', '18h - 19h15'], ['U18 PBA-2', '19h15 - 20h30'], ['U21 PBA', '20h30 - 22h'], ['Séniors 1', '22h - 23h30']] },
     ],
   },
   {
@@ -90,7 +135,7 @@ export const planning = [
   {
     venue: 'Gymnase Paul Valéry',
     address: '15 rue de la Nouvelle-Calédonie, 75012 Paris',
-    days: [{ day: 'Lundi', slots: [['U18-2', '18h - 19h30']] }],
+    days: [{ day: 'Lundi', slots: [['U18-2 PBA', '18h - 19h30']] }],
   },
 ];
 
